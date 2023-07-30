@@ -45,7 +45,7 @@ export default function SignUp() {
                 onRequestClose={() => setIsOpen(!isOpen)} 
                 style={{
                     content:{
-                        width:'400px',
+                        width:'350px',
                         height:'80vh', 
                         position:'absolute', 
                         margin:'auto',
