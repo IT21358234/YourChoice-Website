@@ -1,10 +1,10 @@
-import { Icon } from '@iconify/react';
-import {Navbar, Image, Input, Button, Spacer, Avatar, Text, Link, Dropdown} from '@nextui-org/react'
-import React, {useState} from 'react'
+//import { Icon } from '@iconify/react';
+//import {Navbar, Image, Input, Button, Spacer, Avatar, Text, Link, Dropdown} from '@nextui-org/react'
+//import React, {useState} from 'react'
 
 export default function NavBar() {
 
-    const [isLog, setIsLog] = useState(false)
+    /*const [isLog, setIsLog] = useState(false)
     const username = 'Sanjana'
 
     const [isFasion, setIsFasion] = useState(false)
@@ -18,11 +18,11 @@ export default function NavBar() {
     const [isVehicle, setIsVehicle] = useState(false)
 
     const [isWomenFasion, setIsWomenFasion] = useState(false)
-    const [isMenFasion, setIsMenFasion] = useState(false)
+    const [isMenFasion, setIsMenFasion] = useState(false)*/
 
     return (
         <div>
-            <nav className='navbar'>
+            {/*<nav className='navbar'>
                 <div 
                     className='dropdown' 
                 >
@@ -211,7 +211,7 @@ export default function NavBar() {
                     </div>
                 </div>
                 
-            </nav>
+    </nav>*/}
         </div>
     )
 }
