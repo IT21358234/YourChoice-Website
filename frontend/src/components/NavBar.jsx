@@ -25,8 +25,6 @@ export default function NavBar() {
             <nav className='navbar'>
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
                 >
                     <div className='dropbtn'>
                     <div>
@@ -68,8 +66,8 @@ export default function NavBar() {
                 
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
+                    onMouseEnter={() => setIsSport(true)} 
+                    onMouseLeave={() => setIsSport(false)}
                 >
                     <div className='dropbtn'>
                     <div>
@@ -77,8 +75,8 @@ export default function NavBar() {
                     </div>
                     <Spacer x={0.5}/>
                     <div style={{paddingTop:'6px', fontSize:'14px'}}>
-                        {!isFasion && <Icon icon="ep:arrow-down-bold" />}
-                        {isFasion && <Icon icon="ep:arrow-up-bold" />} 
+                        {!isSport && <Icon icon="ep:arrow-down-bold" />}
+                        {isSport && <Icon icon="ep:arrow-up-bold" />} 
                     </div>
                     </div>
                     <div className='dropdown-content'>
@@ -89,17 +87,17 @@ export default function NavBar() {
                 
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
+                    onMouseEnter={() => setIsHomeGarden(true)} 
+                    onMouseLeave={() => setIsHomeGarden(false)}
                 >
                     <div className='dropbtn'>
                     <div>
-                        Fashion
+                        Home & Garden
                     </div>
                     <Spacer x={0.5}/>
                     <div style={{paddingTop:'6px', fontSize:'14px'}}>
-                        {!isFasion && <Icon icon="ep:arrow-down-bold" />}
-                        {isFasion && <Icon icon="ep:arrow-up-bold" />} 
+                        {!isHomeGarden && <Icon icon="ep:arrow-down-bold" />}
+                        {isHomeGarden && <Icon icon="ep:arrow-up-bold" />} 
                     </div>
                     </div>
                     <div className='dropdown-content'>
@@ -110,17 +108,17 @@ export default function NavBar() {
                 
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
+                    onMouseEnter={() => setIsToys(true)} 
+                    onMouseLeave={() => setIsToys(false)}
                 >
                     <div className='dropbtn'>
                     <div>
-                        Fashion
+                        Toys
                     </div>
                     <Spacer x={0.5}/>
                     <div style={{paddingTop:'6px', fontSize:'14px'}}>
-                        {!isFasion && <Icon icon="ep:arrow-down-bold" />}
-                        {isFasion && <Icon icon="ep:arrow-up-bold" />} 
+                        {!isToys && <Icon icon="ep:arrow-down-bold" />}
+                        {isToys && <Icon icon="ep:arrow-up-bold" />} 
                     </div>
                     </div>
                     <div className='dropdown-content'>
@@ -131,17 +129,17 @@ export default function NavBar() {
                 
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
+                    onMouseEnter={() => setIsPublications(true)} 
+                    onMouseLeave={() => setIsPublications(false)}
                 >
                     <div className='dropbtn'>
                     <div>
-                        Fashion
+                        Publications
                     </div>
                     <Spacer x={0.5}/>
                     <div style={{paddingTop:'6px', fontSize:'14px'}}>
-                        {!isFasion && <Icon icon="ep:arrow-down-bold" />}
-                        {isFasion && <Icon icon="ep:arrow-up-bold" />} 
+                        {!isPublications && <Icon icon="ep:arrow-down-bold" />}
+                        {isPublications && <Icon icon="ep:arrow-up-bold" />} 
                     </div>
                     </div>
                     <div className='dropdown-content'>
@@ -152,17 +150,17 @@ export default function NavBar() {
                 
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
+                    onMouseEnter={() => setIsHealthBeauty(true)} 
+                    onMouseLeave={() => setIsHealthBeauty(false)}
                 >
                     <div className='dropbtn'>
                     <div>
-                        Fashion
+                        Health & Beauty
                     </div>
                     <Spacer x={0.5}/>
                     <div style={{paddingTop:'6px', fontSize:'14px'}}>
-                        {!isFasion && <Icon icon="ep:arrow-down-bold" />}
-                        {isFasion && <Icon icon="ep:arrow-up-bold" />} 
+                        {!isHealthBeauty && <Icon icon="ep:arrow-down-bold" />}
+                        {isHealthBeauty && <Icon icon="ep:arrow-up-bold" />} 
                     </div>
                     </div>
                     <div className='dropdown-content'>
@@ -173,17 +171,17 @@ export default function NavBar() {
                 
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
+                    onMouseEnter={() => setIsGroceriesFoods(true)} 
+                    onMouseLeave={() => setIsGroceriesFoods(false)}
                 >
                     <div className='dropbtn'>
                     <div>
-                        Fashion
+                        Groceries
                     </div>
                     <Spacer x={0.5}/>
                     <div style={{paddingTop:'6px', fontSize:'14px'}}>
-                        {!isFasion && <Icon icon="ep:arrow-down-bold" />}
-                        {isFasion && <Icon icon="ep:arrow-up-bold" />} 
+                        {!isGroceriesFoods && <Icon icon="ep:arrow-down-bold" />}
+                        {isGroceriesFoods && <Icon icon="ep:arrow-up-bold" />} 
                     </div>
                     </div>
                     <div className='dropdown-content'>
@@ -194,17 +192,17 @@ export default function NavBar() {
                 
                 <div 
                     className='dropdown' 
-                    onMouseEnter={() => setIsFasion(true)} 
-                    onMouseLeave={() => setIsFasion(false)}
+                    onMouseEnter={() => setIsVehicle(true)} 
+                    onMouseLeave={() => setIsVehicle(false)}
                 >
                     <div className='dropbtn'>
                     <div>
-                        Fashion
+                        Vehicle
                     </div>
                     <Spacer x={0.5}/>
                     <div style={{paddingTop:'6px', fontSize:'14px'}}>
-                        {!isFasion && <Icon icon="ep:arrow-down-bold" />}
-                        {isFasion && <Icon icon="ep:arrow-up-bold" />} 
+                        {!isVehicle && <Icon icon="ep:arrow-down-bold" />}
+                        {isVehicle && <Icon icon="ep:arrow-up-bold" />} 
                     </div>
                     </div>
                     <div className='dropdown-content'>

@@ -11,12 +11,8 @@ function App() {
         <nav>
           <Header/>
         </nav>
-          <NavBar/>
-        <nav>
-
-        </nav>
       </header>
-      <main style={{minHeight:'700px'}}>
+      <main>
         <Main/>
       </main>
       <footer>

@@ -8,7 +8,15 @@
     justify-content: space-between;
     align-items: center;
     display: flex;
-    cursor: pointer;
+}
+
+.headerBar {
+    color: black;
+    width: 100%;
+    height: max-content;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 .chatbox {
@@ -27,6 +35,28 @@
     border-radius: 20px;
 }
 
+input.search-bar {
+    width: 100%;
+    background-color: #ECF0F1;
+    padding: 8px 10px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 40px;
+}
+
+.search-btn {
+    position: absolute;
+    background-color: #010c80;
+    font-size: 18px;
+    padding: 12px;
+    height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
 .dropdown {
     float: left;
     overflow: hidden;
@@ -34,10 +64,11 @@
 
 .dropdown .dropbtn {
     font-size: 16px;
+    font-weight: 500;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 5px 16px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -47,7 +78,8 @@
 }
 
 .dropdown:hover .dropbtn {
-    font-weight: 500;
+    background-color: #FFF;
+    color: #010c80;
 }
 
 .dropdown-content {
@@ -80,3 +112,94 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+.login-popup {
+    width: 50%;
+    height: 70vh;
+}
+
+.zoom-in::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.zoom-in::-moz-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+form.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+div.login {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input.login {
+    width: 100%;
+    padding: 6px 10px;
+    padding-top: 10px;
+    border: 2px solid #333333;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+label.login {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #757575;
+    transition: all 0.3s ease;
+}
+
+.active-label {
+    top: -12px;
+    font-size: 16px;
+    color: black;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-weight: 400;
+}
+
+.active label.login,
+input.login:focus+label.login {
+    top: -12px;
+    font-size: 16px;
+    color: black;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    font-weight: 400;
+}
+
+span.login {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.login-popup {}
