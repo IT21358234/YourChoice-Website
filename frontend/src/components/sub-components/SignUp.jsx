@@ -133,8 +133,14 @@ export default function SignUp() {
                                 </div>
                                 
                                 <Grid.Container justify='space-between'>
-                                    <Grid css={{fontSize:'14px'}}>Already have an account? <Link>Login</Link></Grid>
+                                    <Grid css={{fontSize:'14px'}}><Link>Forgot Password?</Link></Grid>
                                     <Grid></Grid>
+                                </Grid.Container>
+                                <button className='login'>
+                                    Sign up
+                                </button>
+                                <Grid.Container justify='center'>
+                                    <Grid css={{fontSize:'14px'}}>Already have an account? <Link>Login</Link></Grid>
                                 </Grid.Container>
                             </form>
                         </Grid>
