@@ -29,7 +29,7 @@
     border-radius: 4px;
     font-size: 12px;
     z-index: 999;
-    width: 320px;
+    width: 340px;
     overflow-y: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
@@ -113,32 +113,6 @@ input.search-bar {
     display: block;
 }
 
-.login-popup {
-    width: 50%;
-    height: 70vh;
-}
-
-.zoom-in::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-}
-
-.zoom-in::-moz-scrollbar {
-    width: 0;
-    background: transparent;
-}
-
-@keyframes zoom-in {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
 form.login {
     display: flex;
     flex-direction: column;
@@ -200,4 +174,54 @@ span.login {
     right: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+
+.popup-content {
+    position: absolute;
+    margin: auto;
+    outline: none;
+    animation: zoom-in 0.3s ease-out;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.8);
+    padding: 30px 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.login-popup {
+    width: 350px;
+    height: 80vh;
+    border-radius: 15px;
+}
+
+.popup-content::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.popup-content::-moz-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width:600px) {
+    .login-popup {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
 }
